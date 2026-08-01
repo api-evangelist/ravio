@@ -1,8 +1,23 @@
 aid: ravio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ravio.png
 name: Ravio
-description: 'Ravio is a company surfaced as a portfolio company of northzone and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Ravio is a real-time compensation benchmarking and total-rewards platform for people and
+  reward teams. Companies connect their HRIS to contribute anonymized headcount and pay data and, in
+  return, access live salary, equity and benefits benchmarks segmented by role, level, location and
+  sector, replacing static annual salary surveys. Backed by Northzone. No public developer API, docs
+  portal or SDK surface was discovered during enrichment; security posture (Vanta trust center, domain
+  security) was probed.'
 url: https://raw.githubusercontent.com/api-evangelist/ravio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise
+- Compensation
+- Benchmarking
+- Total Rewards
+- Human Resources
+- HR Tech
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/ravio-trust-center.yml
+- type: DomainSecurity
+  url: security/ravio-domain-security.yml
 - type: Website
   url: https://ravio.com
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
